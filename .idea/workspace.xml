@@ -9,17 +9,12 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="15c74c7b-8f05-4c15-b1c7-12b9db44363c" name="Changes" comment="commit update">
-      <change afterPath="$PROJECT_DIR$/.idea/inspectionProfiles/Project_Default.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/controller/loginServlet.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/model/UserDAO.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/webapp/css/loginPage.css" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/webapp/login.jsp" afterDir="false" />
+    <list default="true" id="15c74c7b-8f05-4c15-b1c7-12b9db44363c" name="Changes" comment="commit semifinale">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/controller/loginServlet.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/controller/loginServlet.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/model/UserDAO.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/model/UserDAO.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/model/connectDB.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/model/connectDB.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/model/user.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/model/User.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/webapp/index.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/index.jsp" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -78,7 +73,7 @@
   <component name="PropertiesComponent"><![CDATA[{
   "keyToString": {
     "ASKED_SHARE_PROJECT_CONFIGURATION_FILES": "true",
-    "Application.connectDB.executor": "Run",
+    "Application.connectDB.executor": "Debug",
     "RunOnceActivity.ShowReadmeOnStart": "true",
     "SHARE_PROJECT_CONFIGURATION_FILES": "true",
     "Tomcat Server.Tomcat 11.0.0.executor": "Run",
@@ -133,6 +128,24 @@
       <predefined_log_file id="Tomcat Manager" />
       <predefined_log_file id="Tomcat Host Manager" />
       <predefined_log_file id="Tomcat Localhost Access" />
+      <RunnerSettings RunnerId="Debug">
+        <option name="DEBUG_PORT" value="50446" />
+      </RunnerSettings>
+      <ConfigurationWrapper VM_VAR="JAVA_OPTS" RunnerId="Debug">
+        <option name="USE_ENV_VARIABLES" value="true" />
+        <STARTUP>
+          <option name="USE_DEFAULT" value="true" />
+          <option name="SCRIPT" value="" />
+          <option name="VM_PARAMETERS" value="" />
+          <option name="PROGRAM_PARAMETERS" value="" />
+        </STARTUP>
+        <SHUTDOWN>
+          <option name="USE_DEFAULT" value="true" />
+          <option name="SCRIPT" value="" />
+          <option name="VM_PARAMETERS" value="" />
+          <option name="PROGRAM_PARAMETERS" value="" />
+        </SHUTDOWN>
+      </ConfigurationWrapper>
       <ConfigurationWrapper VM_VAR="JAVA_OPTS" RunnerId="Run">
         <option name="USE_ENV_VARIABLES" value="true" />
         <STARTUP>
@@ -182,6 +195,9 @@
       <workItem from="1733753301941" duration="19000" />
       <workItem from="1733850131796" duration="7500000" />
       <workItem from="1733863829715" duration="23898000" />
+      <workItem from="1734000692544" duration="151000" />
+      <workItem from="1734010049291" duration="3048000" />
+      <workItem from="1734013951023" duration="3663000" />
     </task>
     <task id="LOCAL-00001" summary="commit update">
       <option name="closed" value="true" />
@@ -199,7 +215,15 @@
       <option name="project" value="LOCAL" />
       <updated>1733934337611</updated>
     </task>
-    <option name="localTasksCounter" value="3" />
+    <task id="LOCAL-00003" summary="commit semifinale">
+      <option name="closed" value="true" />
+      <created>1734000822762</created>
+      <option name="number" value="00003" />
+      <option name="presentableId" value="LOCAL-00003" />
+      <option name="project" value="LOCAL" />
+      <updated>1734000822762</updated>
+    </task>
+    <option name="localTasksCounter" value="4" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -261,6 +285,7 @@
   <component name="VcsManagerConfiguration">
     <MESSAGE value="commit example" />
     <MESSAGE value="commit update" />
-    <option name="LAST_COMMIT_MESSAGE" value="commit update" />
+    <MESSAGE value="commit semifinale" />
+    <option name="LAST_COMMIT_MESSAGE" value="commit semifinale" />
   </component>
 </project>

@@ -3,10 +3,12 @@ package model;
 import java.sql.*;
 
 public class UserDAO {
-    public int doCheckUser(String username) {
+public int doCheckUser(User usr) {
         try (Connection con = connectDB.getConnection()) {
-            PreparedStatement statement = con.prepareStatement("select * from users where username=?");
-            statement.setString(1, username);
+            PreparedStatement statement = con.prepareStatement("select * from users where username=? and password=?");
+            statement.setString(1, usr.getUser());
+            statement.setString(2, usr.getPass());
+
             ResultSet rs = statement.executeQuery();
             if (rs.next()) {
                 return 1;

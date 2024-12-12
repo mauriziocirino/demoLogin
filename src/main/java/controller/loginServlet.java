@@ -23,7 +23,6 @@ public class loginServlet extends HttpServlet {
     protected void doGet(HttpServletRequest request, HttpServletResponse response) throws ServletException, IOException {
         try {
             PrintWriter out = response.getWriter();
-            out.println("<font color=green size=20>LOGIN TRY</font>");
             //problemi da qui in poi
 
 
@@ -31,23 +30,24 @@ public class loginServlet extends HttpServlet {
             String user = request.getParameter("user");
             String pass = request.getParameter("pass");
             HttpSession session = request.getSession();
+
             User usr = new User (user, pass);
             UserDAO udao = new UserDAO();
-            out.println("<font color=green size=20>LOGIN TRY "+ udao.doCheckUser(user)+"</font>");
+            out.println("<font color=green size=20>LOGIN TRY "+ udao.doCheckUser(usr)+"</font>");
+            out.println("<font color=green size=20>LOGIN TRY</font>");
             //quello che fa se l'utente è registrato
 
-            if(udao.doCheckUser(usr.getUser())==1){
-                out.println("<font color=green size=10>utente trovato</font>");
+            if(udao.doCheckUser(usr)==1){
                 session.setAttribute("user", usr);
-                rd = request.getRequestDispatcher("index.jsp");
-                rd.forward(request, response);
+                response.sendRedirect(request.getContextPath() + "/index.jsp");
+                out.println("<font color=green size=10>utente trovato</font>");
 
             }
             else{
-                out.println("<font color=red size=20>ERROR</font>");
-                rd = request.getRequestDispatcher("login.jsp");
+                rd = request.getRequestDispatcher("/login.jsp");
                 session.setAttribute("loginError", "credenziali non corrette");
                 rd.forward(request, response);
+                out.println("<font color=red size=20>ERROR</font>");
             }
 
         }
