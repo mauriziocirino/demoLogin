@@ -1,0 +1,33 @@
+container {
+    display: grid;
+    place-items: center;
+    place-content: center;
+}
+
+button {
+    margin-top: 5%;
+    border: 0;
+    border-radius: 5%;
+    color: white;
+    padding: 10px;
+    text-transform: uppercase;
+    font-weight: 400;
+    font-size: 0.7em;
+    letter-spacing: 1px;
+    background-color: #D6AD61;
+    cursor:pointer;
+    outline: none;
+    display: grid;
+}
+form{
+    display: grid;
+    place-items: center;
+    place-content: center;
+    place-self: center;
+}
+input{
+    text-align: center;
+}
+input::placeholder {
+    color: lightgrey; /* Colore del testo del placeholder */
+}

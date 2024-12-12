@@ -1,10 +1,10 @@
 package model;
 
-public class user {
+public class User {
 
     private String user;
     private String pass;
-    public user(String user, String pass) {
+    public User(String user, String pass) {
         this.user = user;
         this.pass = pass;
     }
