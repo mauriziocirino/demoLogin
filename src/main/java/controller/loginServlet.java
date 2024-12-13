@@ -33,8 +33,6 @@ public class loginServlet extends HttpServlet {
 
             User usr = new User (user, pass);
             UserDAO udao = new UserDAO();
-            out.println("<font color=green size=20>LOGIN TRY "+ udao.doCheckUser(usr)+"</font>");
-            out.println("<font color=green size=20>LOGIN TRY</font>");
             //quello che fa se l'utente è registrato
 
             if(udao.doCheckUser(usr)==1){
