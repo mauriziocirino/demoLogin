@@ -40,14 +40,11 @@ public class loginServlet extends HttpServlet {
             if(udao.doCheckUser(usr)==1){
                 session.setAttribute("user", usr);
                 response.sendRedirect(request.getContextPath() + "/index.jsp");
-                out.println("<font color=green size=10>utente trovato</font>");
-
             }
             else{
                 rd = request.getRequestDispatcher("/login.jsp");
                 session.setAttribute("loginError", "credenziali non corrette");
                 rd.forward(request, response);
-                out.println("<font color=red size=20>ERROR</font>");
             }
 
         }
