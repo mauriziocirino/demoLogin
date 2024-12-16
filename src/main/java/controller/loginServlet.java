@@ -29,14 +29,21 @@ public class loginServlet extends HttpServlet {
             RequestDispatcher rd;
             String user = request.getParameter("user");
             String pass = request.getParameter("pass");
-            HttpSession session = request.getSession();
+
 
             User usr = new User (user, pass);
             UserDAO udao = new UserDAO();
             //quello che fa se l'utente è registrato
 
+            HttpSession session = request.getSession(false);
             if(udao.doCheckUser(usr)==1){
-                session.setAttribute("user", usr);
+                //INVALIDO LA SESSIONE ESISTENTE
+                if (session!=null) session.invalidate();
+
+                //RICHIEDO UNA NUOVA SESSION E LE ATTRIBUISCO IL VALORE USER
+                session = request.getSession();
+                session.setAttribute("user", usr.getUser());
+                session.setMaxInactiveInterval(5*60);  //setto il limite di inattività a 5 minuti
                 response.sendRedirect(request.getContextPath() + "/index.jsp");
             }
             else{
