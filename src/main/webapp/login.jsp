@@ -1,9 +1,12 @@
 <%@ page import="model.User" %><%
     User userSession = (User) session.getAttribute("userSession");
-    String errorLogin = (String) session.getAttribute("loginError");
+    String errorLogin = (String) session.getAttribute("errorMessage");
+    String successLogin = (String) session.getAttribute("successLogin");
 %>
 
 <link rel="stylesheet" href="css/loginPage.css" type="text/css"/>
+<link rel="stylesheet" href="css/style.css" type="text/css"/>
+
 <html>
 <head>
     <title>Login PAGE FORM</title>
@@ -19,9 +22,14 @@
         <button type="submit">Login</button>
         <button type="reset">Cancel</button>
     </form>
-    <p id="errorLog" style="color: red;"> </p>
+    <div id="message"> </div>
+    <%if(userSession == null && successLogin != null){ %>
+    <div id="successLogin" class="successLogin"> <%=successLogin%></div>
+    <%}%>
+
     <%if(userSession == null && errorLogin != null){ %>
-    <p id="errorLogin" style="color: red;"> <%=errorLogin%></p>
+    <div id="errorMessage" class="errorLogin" style="color: red;"> <%=errorLogin%></div>
+
     <%}%>
 
 </div>

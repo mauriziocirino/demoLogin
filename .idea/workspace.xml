@@ -9,10 +9,14 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="15c74c7b-8f05-4c15-b1c7-12b9db44363c" name="Changes" comment="commit final">
+    <list default="true" id="15c74c7b-8f05-4c15-b1c7-12b9db44363c" name="Changes" comment="update finale">
+      <change afterPath="$PROJECT_DIR$/src/main/java/controller/logoutServlet.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/webapp/css/style.css" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/controller/loginServlet.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/controller/loginServlet.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/webapp/css/loginPage.css" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/css/loginPage.css" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/webapp/index.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/index.jsp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/webapp/login.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/login.jsp" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -22,8 +26,8 @@
   <component name="FileTemplateManagerImpl">
     <option name="RECENT_TEMPLATES">
       <list>
-        <option value="Class" />
         <option value="Jsp File" />
+        <option value="Class" />
       </list>
     </option>
   </component>
@@ -57,7 +61,7 @@
     </option>
   </component>
   <component name="ProblemsViewState">
-    <option name="selectedTabId" value="ProjectErrors" />
+    <option name="selectedTabId" value="CurrentFile" />
   </component>
   <component name="ProjectColorInfo">{
   &quot;associatedIndex&quot;: 4
@@ -74,12 +78,12 @@
     "Application.connectDB.executor": "Debug",
     "RunOnceActivity.ShowReadmeOnStart": "true",
     "SHARE_PROJECT_CONFIGURATION_FILES": "true",
-    "Tomcat Server.Tomcat 11.0.0.executor": "Debug",
+    "Tomcat Server.Tomcat 11.0.0.executor": "Run",
     "git-widget-placeholder": "master",
     "ignore.virus.scanning.warn.message": "true",
     "jdk.selected.JAVA_MODULE": "openjdk-22",
     "kotlin-language-version-configured": "true",
-    "last_opened_file_path": "C:/Program Files/Apache Software Foundation/Tomcat 11.0/lib/tomcat-jdbc.jar",
+    "last_opened_file_path": "C:/Users/mauri/IdeaProjects/primaProva/demoLogin/src/main/webapp",
     "node.js.detected.package.eslint": "true",
     "node.js.detected.package.tslint": "true",
     "node.js.selected.package.eslint": "(autodetect)",
@@ -99,6 +103,10 @@
   <component name="RecentsManager">
     <key name="CopyFile.RECENT_KEYS">
       <recent name="C:\Users\mauri\IdeaProjects\primaProva\demoLogin\src\lib" />
+    </key>
+    <key name="MoveFile.RECENT_KEYS">
+      <recent name="C:\Users\mauri\IdeaProjects\primaProva\demoLogin\src\main\webapp" />
+      <recent name="C:\Users\mauri\IdeaProjects\primaProva\demoLogin\src\main\webapp\WEB-INF" />
     </key>
   </component>
   <component name="RunManager" selected="Tomcat Server.Tomcat 11.0.0">
@@ -198,7 +206,12 @@
       <workItem from="1734013951023" duration="3745000" />
       <workItem from="1734111582876" duration="1617000" />
       <workItem from="1734122061843" duration="210000" />
-      <workItem from="1734367467235" duration="2498000" />
+      <workItem from="1734367467235" duration="3728000" />
+      <workItem from="1734389256724" duration="100000" />
+      <workItem from="1734389369403" duration="4527000" />
+      <workItem from="1734400012691" duration="1563000" />
+      <workItem from="1734445020121" duration="643000" />
+      <workItem from="1734452678459" duration="5690000" />
     </task>
     <task id="LOCAL-00001" summary="commit update">
       <option name="closed" value="true" />
@@ -248,7 +261,15 @@
       <option name="project" value="LOCAL" />
       <updated>1734122222886</updated>
     </task>
-    <option name="localTasksCounter" value="7" />
+    <task id="LOCAL-00007" summary="update finale">
+      <option name="closed" value="true" />
+      <created>1734375438433</created>
+      <option name="number" value="00007" />
+      <option name="presentableId" value="LOCAL-00007" />
+      <option name="project" value="LOCAL" />
+      <updated>1734375438433</updated>
+    </task>
+    <option name="localTasksCounter" value="8" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -312,17 +333,7 @@
     <MESSAGE value="commit update" />
     <MESSAGE value="commit semifinale" />
     <MESSAGE value="commit final" />
-    <option name="LAST_COMMIT_MESSAGE" value="commit final" />
-  </component>
-  <component name="XDebuggerManager">
-    <breakpoint-manager>
-      <breakpoints>
-        <line-breakpoint enabled="true" type="java-line">
-          <url>file://$PROJECT_DIR$/src/main/java/controller/loginServlet.java</url>
-          <line>44</line>
-          <option name="timeStamp" value="1" />
-        </line-breakpoint>
-      </breakpoints>
-    </breakpoint-manager>
+    <MESSAGE value="update finale" />
+    <option name="LAST_COMMIT_MESSAGE" value="update finale" />
   </component>
 </project>

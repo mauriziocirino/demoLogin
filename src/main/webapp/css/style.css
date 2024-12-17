@@ -1,0 +1,10 @@
+.container {
+    display: grid;
+    place-items: center;
+    place-content: center;
+}
+div{
+    display: grid;
+    place-items: center;
+    place-content: center;
+}

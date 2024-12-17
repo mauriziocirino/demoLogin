@@ -44,11 +44,12 @@ public class loginServlet extends HttpServlet {
                 session = request.getSession();
                 session.setAttribute("user", usr.getUser());
                 session.setMaxInactiveInterval(5*60);  //setto il limite di inattività a 5 minuti
+                session.setAttribute("successMessage", "utente trovato");
                 response.sendRedirect(request.getContextPath() + "/index.jsp");
             }
             else{
                 rd = request.getRequestDispatcher("/login.jsp");
-                session.setAttribute("loginError", "credenziali non corrette");
+                session.setAttribute("errorMessage", "credenziali non corrette");
                 rd.forward(request, response);
             }
 
