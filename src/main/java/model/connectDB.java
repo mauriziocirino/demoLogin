@@ -13,7 +13,7 @@ public class connectDB {
     static {
         // Configurazione del pool di connessioni
         PoolProperties poolProperties = new PoolProperties();
-        poolProperties.setUrl("jdbc:mysql://127.0.0.1:3306/login");
+        poolProperties.setUrl("jdbc:mysql://127.0.0.1:3306/crochetique");
         poolProperties.setUsername("root");
         poolProperties.setPassword("root");
         poolProperties.setDriverClassName("com.mysql.cj.jdbc.Driver");

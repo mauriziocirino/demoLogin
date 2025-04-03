@@ -9,13 +9,27 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="15c74c7b-8f05-4c15-b1c7-12b9db44363c" name="Changes" comment="update finale">
-      <change afterPath="$PROJECT_DIR$/src/main/java/controller/logoutServlet.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/webapp/css/style.css" afterDir="false" />
+    <list default="true" id="15c74c7b-8f05-4c15-b1c7-12b9db44363c" name="Changes" comment="update completo">
+      <change afterPath="$PROJECT_DIR$/src/main/java/model/articolo/Articolo.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/model/articolo/ArticoloDao.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/model/articolo/ArticoloExtractor.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/model/articolo/ArticoloManager.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/model/articolo/accessorio/Accessorio.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/model/articolo/borsa/Borsa.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/model/catalogo/Catalogo.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/model/catalogo/CatalogoDao.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/model/catalogo/CatalogoExtractor.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/model/catalogo/CatalogoManager.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/model/catalogo/CatalogoServlet.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/model/storage/Manager.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/model/storage/ResultSetExtractor.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/webapp/createCatalogo.jsp" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/webapp/crud.jsp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/dataSources.local.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/dataSources.local.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/dataSources.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/dataSources.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/controller/loginServlet.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/controller/loginServlet.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/webapp/css/loginPage.css" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/css/loginPage.css" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/webapp/index.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/index.jsp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/model/connectDB.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/model/connectDB.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/webapp/login.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/login.jsp" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -26,8 +40,8 @@
   <component name="FileTemplateManagerImpl">
     <option name="RECENT_TEMPLATES">
       <list>
-        <option value="Jsp File" />
         <option value="Class" />
+        <option value="Jsp File" />
       </list>
     </option>
   </component>
@@ -83,7 +97,7 @@
     "ignore.virus.scanning.warn.message": "true",
     "jdk.selected.JAVA_MODULE": "openjdk-22",
     "kotlin-language-version-configured": "true",
-    "last_opened_file_path": "C:/Users/mauri/IdeaProjects/primaProva/demoLogin/src/main/webapp",
+    "last_opened_file_path": "C:/Users/mauri/IdeaProjects/primaProva/demoLogin/src/main/java/model",
     "node.js.detected.package.eslint": "true",
     "node.js.detected.package.tslint": "true",
     "node.js.selected.package.eslint": "(autodetect)",
@@ -102,11 +116,15 @@
 }]]></component>
   <component name="RecentsManager">
     <key name="CopyFile.RECENT_KEYS">
+      <recent name="C:\Users\mauri\IdeaProjects\primaProva\demoLogin\src\main\java\model" />
       <recent name="C:\Users\mauri\IdeaProjects\primaProva\demoLogin\src\lib" />
     </key>
     <key name="MoveFile.RECENT_KEYS">
       <recent name="C:\Users\mauri\IdeaProjects\primaProva\demoLogin\src\main\webapp" />
       <recent name="C:\Users\mauri\IdeaProjects\primaProva\demoLogin\src\main\webapp\WEB-INF" />
+    </key>
+    <key name="CopyClassDialog.RECENTS_KEY">
+      <recent name="model.storage" />
     </key>
   </component>
   <component name="RunManager" selected="Tomcat Server.Tomcat 11.0.0">
@@ -118,7 +136,6 @@
       </method>
     </configuration>
     <configuration name="Tomcat 11.0.0" type="#com.intellij.j2ee.web.tomcat.TomcatRunConfigurationFactory" factoryName="Local" APPLICATION_SERVER_NAME="Tomcat 11.0.0" ALTERNATIVE_JRE_ENABLED="false">
-      <option name="OPEN_IN_BROWSER_URL" value="http://localhost:8080/demoLogin_war_exploded/" />
       <deployment>
         <artifact name="demoLogin:war exploded">
           <settings>
@@ -137,7 +154,37 @@
       <RunnerSettings RunnerId="Debug">
         <option name="DEBUG_PORT" value="50446" />
       </RunnerSettings>
+      <ConfigurationWrapper VM_VAR="JAVA_OPTS" RunnerId="Cover">
+        <option name="USE_ENV_VARIABLES" value="true" />
+        <STARTUP>
+          <option name="USE_DEFAULT" value="true" />
+          <option name="SCRIPT" value="" />
+          <option name="VM_PARAMETERS" value="" />
+          <option name="PROGRAM_PARAMETERS" value="" />
+        </STARTUP>
+        <SHUTDOWN>
+          <option name="USE_DEFAULT" value="true" />
+          <option name="SCRIPT" value="" />
+          <option name="VM_PARAMETERS" value="" />
+          <option name="PROGRAM_PARAMETERS" value="" />
+        </SHUTDOWN>
+      </ConfigurationWrapper>
       <ConfigurationWrapper VM_VAR="JAVA_OPTS" RunnerId="Debug">
+        <option name="USE_ENV_VARIABLES" value="true" />
+        <STARTUP>
+          <option name="USE_DEFAULT" value="true" />
+          <option name="SCRIPT" value="" />
+          <option name="VM_PARAMETERS" value="" />
+          <option name="PROGRAM_PARAMETERS" value="" />
+        </STARTUP>
+        <SHUTDOWN>
+          <option name="USE_DEFAULT" value="true" />
+          <option name="SCRIPT" value="" />
+          <option name="VM_PARAMETERS" value="" />
+          <option name="PROGRAM_PARAMETERS" value="" />
+        </SHUTDOWN>
+      </ConfigurationWrapper>
+      <ConfigurationWrapper VM_VAR="JAVA_OPTS" RunnerId="Profile">
         <option name="USE_ENV_VARIABLES" value="true" />
         <STARTUP>
           <option name="USE_DEFAULT" value="true" />
@@ -174,6 +221,10 @@
         </option>
       </method>
     </configuration>
+    <list>
+      <item itemvalue="Application.connectDB" />
+      <item itemvalue="Tomcat Server.Tomcat 11.0.0" />
+    </list>
     <recent_temporary>
       <list>
         <item itemvalue="Application.connectDB" />
@@ -211,7 +262,12 @@
       <workItem from="1734389369403" duration="4527000" />
       <workItem from="1734400012691" duration="1563000" />
       <workItem from="1734445020121" duration="643000" />
-      <workItem from="1734452678459" duration="5690000" />
+      <workItem from="1734452678459" duration="6321000" />
+      <workItem from="1734466115389" duration="8338000" />
+      <workItem from="1740962719953" duration="2865000" />
+      <workItem from="1741056997757" duration="1238000" />
+      <workItem from="1743477011825" duration="97000" />
+      <workItem from="1743677811943" duration="7531000" />
     </task>
     <task id="LOCAL-00001" summary="commit update">
       <option name="closed" value="true" />
@@ -269,7 +325,15 @@
       <option name="project" value="LOCAL" />
       <updated>1734375438433</updated>
     </task>
-    <option name="localTasksCounter" value="8" />
+    <task id="LOCAL-00008" summary="update completo">
+      <option name="closed" value="true" />
+      <created>1734460577789</created>
+      <option name="number" value="00008" />
+      <option name="presentableId" value="LOCAL-00008" />
+      <option name="project" value="LOCAL" />
+      <updated>1734460577789</updated>
+    </task>
+    <option name="localTasksCounter" value="9" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -334,6 +398,7 @@
     <MESSAGE value="commit semifinale" />
     <MESSAGE value="commit final" />
     <MESSAGE value="update finale" />
-    <option name="LAST_COMMIT_MESSAGE" value="update finale" />
+    <MESSAGE value="update completo" />
+    <option name="LAST_COMMIT_MESSAGE" value="update completo" />
   </component>
 </project>

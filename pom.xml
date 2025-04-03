@@ -27,6 +27,7 @@
         <dependency>
             <groupId>org.apache.tomcat</groupId>
             <artifactId>tomcat-jdbc</artifactId>
+            <version>11.0.0</version>
         </dependency>
 
         <dependency>
@@ -47,6 +48,16 @@
             <version>${junit.version}</version>
             <scope>test</scope>
         </dependency>
+        <dependency>
+            <!-- TO set println-->
+            <groupId>jakarta.servlet.jsp</groupId>
+            <artifactId>jakarta.servlet.jsp-api</artifactId>
+            <version>3.0.0</version>
+            <scope>provided</scope>
+        </dependency>
+
+
+
     </dependencies>
 
     <build>

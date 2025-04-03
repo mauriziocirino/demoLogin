@@ -22,8 +22,8 @@
         <button type="submit">Login</button>
         <button type="reset">Cancel</button>
     </form>
-    <div id="message"> </div>
-    <%if(userSession == null && successLogin != null){ %>
+    <div id="message">
+    <%if(userSession != null && successLogin != null){ %>
     <div id="successLogin" class="successLogin"> <%=successLogin%></div>
     <%}%>
 
@@ -31,7 +31,7 @@
     <div id="errorMessage" class="errorLogin" style="color: red;"> <%=errorLogin%></div>
 
     <%}%>
-
+    </div>
 </div>
 
 </body>
