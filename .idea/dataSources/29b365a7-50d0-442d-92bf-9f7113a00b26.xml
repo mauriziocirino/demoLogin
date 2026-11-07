@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <dataSource name="crochetique">
-  <database-model serializer="dbm" dbms="MYSQL" family-id="MYSQL" format-version="4.52">
+  <database-model serializer="dbm" dbms="MYSQL" family-id="MYSQL" format-version="4.55">
     <root id="1">
       <DefaultCasing>lower/lower</DefaultCasing>
       <DefaultEngine>InnoDB</DefaultEngine>
@@ -1104,14 +1104,14 @@ sys|schema||mysql.sys|localhost|TRIGGER|G</Grants>
       <CollationName>utf8mb4_0900_ai_ci</CollationName>
     </table>
     <column id="318" parent="308" name="id">
-      <DasType>int|0s</DasType>
       <NotNull>1</NotNull>
       <Position>1</Position>
+      <StoredType>int|0s</StoredType>
     </column>
     <column id="319" parent="308" name="indossabile">
-      <DasType>tinyint|0s</DasType>
       <DefaultExpression>0</DefaultExpression>
       <Position>2</Position>
+      <StoredType>tinyint|0s</StoredType>
     </column>
     <foreign-key id="320" parent="308" name="accessorio_ibfk_1">
       <ColNames>id</ColNames>
@@ -1131,41 +1131,41 @@ sys|schema||mysql.sys|localhost|TRIGGER|G</Grants>
     </key>
     <column id="323" parent="309" name="id">
       <AutoIncrement>5</AutoIncrement>
-      <DasType>int|0s</DasType>
       <NotNull>1</NotNull>
       <Position>1</Position>
+      <StoredType>int|0s</StoredType>
     </column>
     <column id="324" parent="309" name="descrizione">
-      <DasType>varchar(100)|0s</DasType>
       <NotNull>1</NotNull>
       <Position>2</Position>
+      <StoredType>varchar(100)|0s</StoredType>
     </column>
     <column id="325" parent="309" name="numAcquisti">
-      <DasType>int|0s</DasType>
       <DefaultExpression>0</DefaultExpression>
       <Position>3</Position>
+      <StoredType>int|0s</StoredType>
     </column>
     <column id="326" parent="309" name="foto">
-      <DasType>longblob|0s</DasType>
       <Position>4</Position>
+      <StoredType>longblob|0s</StoredType>
     </column>
     <column id="327" parent="309" name="dimensione">
-      <DasType>enum(&apos;XS&apos;, &apos;S&apos;, &apos;M&apos;, &apos;L&apos;, &apos;XL&apos;)|0e</DasType>
       <Position>5</Position>
+      <StoredType>enum(&apos;XS&apos;, &apos;S&apos;, &apos;M&apos;, &apos;L&apos;, &apos;XL&apos;)|0e</StoredType>
     </column>
     <column id="328" parent="309" name="price">
-      <DasType>decimal(9,2 digit)|0s</DasType>
       <NotNull>1</NotNull>
       <Position>6</Position>
+      <StoredType>decimal(9,2 digit)|0s</StoredType>
     </column>
     <column id="329" parent="309" name="codiceTessuto">
-      <DasType>int|0s</DasType>
       <NotNull>1</NotNull>
       <Position>7</Position>
+      <StoredType>int|0s</StoredType>
     </column>
     <column id="330" parent="309" name="idCatalogo">
-      <DasType>int|0s</DasType>
       <Position>8</Position>
+      <StoredType>int|0s</StoredType>
     </column>
     <foreign-key id="331" parent="309" name="articolo_ibfk_1">
       <ColNames>codiceTessuto</ColNames>
@@ -1197,25 +1197,25 @@ sys|schema||mysql.sys|localhost|TRIGGER|G</Grants>
       <UnderlyingIndexName>PRIMARY</UnderlyingIndexName>
     </key>
     <column id="337" parent="310" name="idArticolo">
-      <DasType>int|0s</DasType>
       <NotNull>1</NotNull>
       <Position>1</Position>
+      <StoredType>int|0s</StoredType>
     </column>
     <column id="338" parent="310" name="idOrdine">
-      <DasType>int|0s</DasType>
       <NotNull>1</NotNull>
       <Position>2</Position>
+      <StoredType>int|0s</StoredType>
     </column>
     <column id="339" parent="310" name="quantity">
-      <DasType>int|0s</DasType>
       <DefaultExpression>1</DefaultExpression>
       <NotNull>1</NotNull>
       <Position>3</Position>
+      <StoredType>int|0s</StoredType>
     </column>
     <column id="340" parent="310" name="totPrezzo">
-      <DasType>decimal(10,2 digit)|0s</DasType>
       <DefaultExpression>0.00</DefaultExpression>
       <Position>4</Position>
+      <StoredType>decimal(10,2 digit)|0s</StoredType>
     </column>
     <foreign-key id="341" parent="310" name="articoloordine_ibfk_1">
       <ColNames>idArticolo</ColNames>
@@ -1244,19 +1244,19 @@ idOrdine</ColNames>
       <UnderlyingIndexName>PRIMARY</UnderlyingIndexName>
     </key>
     <column id="346" parent="311" name="id">
-      <DasType>int|0s</DasType>
       <NotNull>1</NotNull>
       <Position>1</Position>
+      <StoredType>int|0s</StoredType>
     </column>
     <column id="347" parent="311" name="imbottitura">
-      <DasType>tinyint(1)|0s</DasType>
       <DefaultExpression>0</DefaultExpression>
       <Position>2</Position>
+      <StoredType>tinyint(1)|0s</StoredType>
     </column>
     <column id="348" parent="311" name="idModello">
-      <DasType>int|0s</DasType>
       <NotNull>1</NotNull>
       <Position>3</Position>
+      <StoredType>int|0s</StoredType>
     </column>
     <foreign-key id="349" parent="311" name="borsa_ibfk_1">
       <ColNames>id</ColNames>
@@ -1286,24 +1286,24 @@ idOrdine</ColNames>
     </key>
     <column id="354" parent="312" name="id">
       <AutoIncrement>6</AutoIncrement>
-      <DasType>int|0s</DasType>
       <NotNull>1</NotNull>
       <Position>1</Position>
+      <StoredType>int|0s</StoredType>
     </column>
     <column id="355" parent="312" name="nome">
-      <DasType>varchar(30)|0s</DasType>
       <NotNull>1</NotNull>
       <Position>2</Position>
+      <StoredType>varchar(30)|0s</StoredType>
     </column>
     <column id="356" parent="312" name="stagione">
-      <DasType>enum(&apos;Estate&apos;, &apos;Autunno&apos;, &apos;Inverno&apos;, &apos;Primavera&apos;)|0e</DasType>
       <NotNull>1</NotNull>
       <Position>3</Position>
+      <StoredType>enum(&apos;Estate&apos;, &apos;Autunno&apos;, &apos;Inverno&apos;, &apos;Primavera&apos;)|0e</StoredType>
     </column>
     <column id="357" parent="312" name="anno">
-      <DasType>int|0s</DasType>
       <NotNull>1</NotNull>
       <Position>4</Position>
+      <StoredType>int|0s</StoredType>
     </column>
     <index id="358" parent="312" name="PRIMARY">
       <ColNames>id</ColNames>
@@ -1317,19 +1317,19 @@ idOrdine</ColNames>
     </key>
     <column id="360" parent="313" name="id">
       <AutoIncrement>3</AutoIncrement>
-      <DasType>int|0s</DasType>
       <NotNull>1</NotNull>
       <Position>1</Position>
+      <StoredType>int|0s</StoredType>
     </column>
     <column id="361" parent="313" name="chiusura">
-      <DasType>enum(&apos;Cerniera&apos;, &apos;Clutch&apos;, &apos;Strap&apos;, &apos;Bottone&apos;, &apos;Nessuna&apos;)|0e</DasType>
       <DefaultExpression>&apos;Nessuna&apos;</DefaultExpression>
       <Position>2</Position>
+      <StoredType>enum(&apos;Cerniera&apos;, &apos;Clutch&apos;, &apos;Strap&apos;, &apos;Bottone&apos;, &apos;Nessuna&apos;)|0e</StoredType>
     </column>
     <column id="362" parent="313" name="nome">
-      <DasType>varchar(30)|0s</DasType>
       <NotNull>1</NotNull>
       <Position>3</Position>
+      <StoredType>varchar(30)|0s</StoredType>
     </column>
     <index id="363" parent="313" name="PRIMARY">
       <ColNames>id</ColNames>
@@ -1343,34 +1343,34 @@ idOrdine</ColNames>
     </key>
     <column id="365" parent="314" name="id">
       <AutoIncrement>4</AutoIncrement>
-      <DasType>int|0s</DasType>
       <NotNull>1</NotNull>
       <Position>1</Position>
+      <StoredType>int|0s</StoredType>
     </column>
     <column id="366" parent="314" name="idUtente">
-      <DasType>int|0s</DasType>
       <NotNull>1</NotNull>
       <Position>2</Position>
+      <StoredType>int|0s</StoredType>
     </column>
     <column id="367" parent="314" name="via">
-      <DasType>varchar(30)|0s</DasType>
       <NotNull>1</NotNull>
       <Position>3</Position>
+      <StoredType>varchar(30)|0s</StoredType>
     </column>
     <column id="368" parent="314" name="civico">
-      <DasType>varchar(6)|0s</DasType>
       <NotNull>1</NotNull>
       <Position>4</Position>
+      <StoredType>varchar(6)|0s</StoredType>
     </column>
     <column id="369" parent="314" name="CAP">
-      <DasType>varchar(5)|0s</DasType>
       <NotNull>1</NotNull>
       <Position>5</Position>
+      <StoredType>varchar(5)|0s</StoredType>
     </column>
     <column id="370" parent="314" name="stato">
-      <DasType>enum(&apos;Pagato&apos;, &apos;In Elaborazione&apos;, &apos;Spedito&apos;, &apos;Consegnato&apos;, &apos;Completato&apos;)|0e</DasType>
       <NotNull>1</NotNull>
       <Position>6</Position>
+      <StoredType>enum(&apos;Pagato&apos;, &apos;In Elaborazione&apos;, &apos;Spedito&apos;, &apos;Consegnato&apos;, &apos;Completato&apos;)|0e</StoredType>
     </column>
     <foreign-key id="371" parent="314" name="ordine_ibfk_1">
       <ColNames>idUtente</ColNames>
@@ -1392,34 +1392,34 @@ idOrdine</ColNames>
       <UnderlyingIndexName>PRIMARY</UnderlyingIndexName>
     </key>
     <column id="375" parent="315" name="numCarta">
-      <DasType>varchar(19)|0s</DasType>
       <NotNull>1</NotNull>
       <Position>1</Position>
+      <StoredType>varchar(19)|0s</StoredType>
     </column>
     <column id="376" parent="315" name="idUtente">
-      <DasType>int|0s</DasType>
       <NotNull>1</NotNull>
       <Position>2</Position>
+      <StoredType>int|0s</StoredType>
     </column>
     <column id="377" parent="315" name="nomeIntestatario">
-      <DasType>varchar(30)|0s</DasType>
       <NotNull>1</NotNull>
       <Position>3</Position>
+      <StoredType>varchar(30)|0s</StoredType>
     </column>
     <column id="378" parent="315" name="cognomeIntestatario">
-      <DasType>varchar(30)|0s</DasType>
       <NotNull>1</NotNull>
       <Position>4</Position>
+      <StoredType>varchar(30)|0s</StoredType>
     </column>
     <column id="379" parent="315" name="meseScadenza">
-      <DasType>tinyint|0s</DasType>
       <NotNull>1</NotNull>
       <Position>5</Position>
+      <StoredType>tinyint|0s</StoredType>
     </column>
     <column id="380" parent="315" name="annoScadenza">
-      <DasType>year|0s</DasType>
       <NotNull>1</NotNull>
       <Position>6</Position>
+      <StoredType>year|0s</StoredType>
     </column>
     <foreign-key id="381" parent="315" name="pagamento_ibfk_1">
       <ColNames>idUtente</ColNames>
@@ -1444,19 +1444,19 @@ numCarta</ColNames>
     </check>
     <column id="385" parent="316" name="id">
       <AutoIncrement>4</AutoIncrement>
-      <DasType>int|0s</DasType>
       <NotNull>1</NotNull>
       <Position>1</Position>
+      <StoredType>int|0s</StoredType>
     </column>
     <column id="386" parent="316" name="materiale">
-      <DasType>varchar(50)|0s</DasType>
       <NotNull>1</NotNull>
       <Position>2</Position>
+      <StoredType>varchar(50)|0s</StoredType>
     </column>
     <column id="387" parent="316" name="coloreHEX">
-      <DasType>varchar(7)|0s</DasType>
       <NotNull>1</NotNull>
       <Position>3</Position>
+      <StoredType>varchar(7)|0s</StoredType>
     </column>
     <index id="388" parent="316" name="PRIMARY">
       <ColNames>id</ColNames>
@@ -1470,29 +1470,29 @@ numCarta</ColNames>
     </key>
     <column id="390" parent="317" name="id">
       <AutoIncrement>5</AutoIncrement>
-      <DasType>int|0s</DasType>
       <NotNull>1</NotNull>
       <Position>1</Position>
+      <StoredType>int|0s</StoredType>
     </column>
     <column id="391" parent="317" name="username">
-      <DasType>varchar(50)|0s</DasType>
       <NotNull>1</NotNull>
       <Position>2</Position>
+      <StoredType>varchar(50)|0s</StoredType>
     </column>
     <column id="392" parent="317" name="pass">
-      <DasType>varchar(255)|0s</DasType>
       <NotNull>1</NotNull>
       <Position>3</Position>
+      <StoredType>varchar(255)|0s</StoredType>
     </column>
     <column id="393" parent="317" name="ruolo">
-      <DasType>enum(&apos;admin&apos;, &apos;user&apos;)|0e</DasType>
       <NotNull>1</NotNull>
       <Position>4</Position>
+      <StoredType>enum(&apos;admin&apos;, &apos;user&apos;)|0e</StoredType>
     </column>
     <column id="394" parent="317" name="email">
-      <DasType>varchar(100)|0s</DasType>
       <NotNull>1</NotNull>
       <Position>5</Position>
+      <StoredType>varchar(100)|0s</StoredType>
     </column>
     <index id="395" parent="317" name="PRIMARY">
       <ColNames>id</ColNames>
