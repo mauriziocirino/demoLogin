@@ -10,30 +10,25 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="15c74c7b-8f05-4c15-b1c7-12b9db44363c" name="Changes" comment="commit quasi finito">
-      <change afterPath="$PROJECT_DIR$/src/main/webapp/modify.jsp" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/webapp/selectCataloghi.jsp" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/dataSources.local.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/dataSources.local.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/dataSources.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/dataSources.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/dataSources/data_sources_history.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/dataSources/data_sources_history.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/db-forest-config.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/db-forest-config.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/sqldialects.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/sqldialects.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/model/UserDAO.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/model/UserDAO.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/model/articolo/Articolo.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/model/articolo/Articolo.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/model/articolo/ArticoloExtractor.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/model/articolo/ArticoloExtractor.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/model/articolo/ArticoloManager.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/model/articolo/ArticoloManager.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/model/articolo/accessorio/Accessorio.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/model/articolo/accessorio/Accessorio.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/model/articolo/borsa/Borsa.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/model/articolo/borsa/Borsa.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/model/catalogo/CatalogoDao.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/model/catalogo/CatalogoDao.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/model/catalogo/CatalogoManager.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/model/catalogo/CatalogoManager.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/model/catalogo/CatalogoServlet.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/model/catalogo/CatalogoServlet.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/model/connectDB.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/model/connectDB.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/model/storage/Manager.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/model/storage/Manager.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/webapp/createCatalogo.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/createCatalogo.jsp" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/webapp/crud.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/crud.jsp" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/webapp/index.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/index.jsp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/db/populate.sql" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/db/populate.sql" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
     <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="DatabaseLocalColorSettings">
+    <colors>
+      <entry key="3cf6e59d-ad92-4e3a-a109-a397da8a5ca1" value="" />
+      <entry key="594288cb-54b1-478e-b978-9886f67f0644" value="" />
+    </colors>
   </component>
   <component name="FileTemplateManagerImpl">
     <option name="RECENT_TEMPLATES">
@@ -79,7 +74,6 @@
   &quot;associatedIndex&quot;: 4
 }</component>
   <component name="ProjectId" id="2pxVvWLSSBsh1NxtZT8GdXK8vcE" />
-  <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
   <component name="ProjectViewState">
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
@@ -89,8 +83,12 @@
     &quot;ASKED_SHARE_PROJECT_CONFIGURATION_FILES&quot;: &quot;true&quot;,
     &quot;Application.connectDB.executor&quot;: &quot;Debug&quot;,
     &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
+    &quot;RunOnceActivity.git.unshallow&quot;: &quot;true&quot;,
+    &quot;RunOnceActivity.typescript.service.memoryLimit.init&quot;: &quot;true&quot;,
     &quot;SHARE_PROJECT_CONFIGURATION_FILES&quot;: &quot;true&quot;,
+    &quot;Smart Tomcat.Unnamed.executor&quot;: &quot;Run&quot;,
     &quot;Tomcat Server.Tomcat 11.0.0.executor&quot;: &quot;Run&quot;,
+    &quot;codeWithMe.voiceChat.enabledByDefault&quot;: &quot;false&quot;,
     &quot;git-widget-placeholder&quot;: &quot;master&quot;,
     &quot;ignore.virus.scanning.warn.message&quot;: &quot;true&quot;,
     &quot;jdk.selected.JAVA_MODULE&quot;: &quot;openjdk-22&quot;,
@@ -104,7 +102,7 @@
     &quot;project.structure.last.edited&quot;: &quot;Modules&quot;,
     &quot;project.structure.proportion&quot;: &quot;0.15&quot;,
     &quot;project.structure.side.proportion&quot;: &quot;0.2&quot;,
-    &quot;settings.editor.selected.configurable&quot;: &quot;reference.settings.project.maven.repository.indices&quot;,
+    &quot;settings.editor.selected.configurable&quot;: &quot;preferences.pluginManager&quot;,
     &quot;vue.rearranger.settings.migration&quot;: &quot;true&quot;
   },
   &quot;keyToStringList&quot;: {
@@ -126,7 +124,7 @@
       <recent name="model.storage" />
     </key>
   </component>
-  <component name="RunManager" selected="Tomcat Server.Tomcat 11.0.0">
+  <component name="RunManager" selected="Smart Tomcat.Unnamed">
     <configuration name="connectDB" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
       <option name="MAIN_CLASS_NAME" value="model.connectDB" />
       <module name="demoLogin" />
@@ -220,9 +218,32 @@
         </option>
       </method>
     </configuration>
+    <configuration name="Unnamed" type="com.poratu.idea.plugins.tomcat" nameIsGenerated="true">
+      <predefined_log_file enabled="true" id="Tomcat Localhost Log" />
+      <predefined_log_file enabled="true" id="Tomcat Access Log" />
+      <predefined_log_file id="Tomcat Catalina Log" />
+      <predefined_log_file id="Tomcat Manager Log" />
+      <predefined_log_file id="Tomcat Host Manager Log" />
+      <option name="catalinaBase" value="$USER_HOME$/.SmartTomcat/demoLogin/demoLogin" />
+      <option name="contextPath" value="/demoLogin" />
+      <option name="docBase" value="$PROJECT_DIR$/src/main/webapp" />
+      <option name="extraClassPath" value="" />
+      <option name="tomcatInfo">
+        <TomcatInfo>
+          <option name="name" value="Apache Tomcat/11.0.27" />
+          <option name="path" value="$USER_HOME$/Server/apache-tomcat-11.0.27" />
+          <option name="version" value="11.0.27.0" />
+        </TomcatInfo>
+      </option>
+      <option name="vmOptions" value="" />
+      <module name="demoLogin" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
     <list>
       <item itemvalue="Application.connectDB" />
-      <item itemvalue="Tomcat Server.Tomcat 11.0.0" />
+      <item itemvalue="Smart Tomcat.Unnamed" />
     </list>
     <recent_temporary>
       <list>
@@ -233,8 +254,8 @@
   <component name="SharedIndexes">
     <attachedChunks>
       <set>
-        <option value="bundled-jdk-9f38398b9061-39b83d9b5494-intellij.indexing.shared.core-IU-241.18034.62" />
-        <option value="bundled-js-predefined-1d06a55b98c1-0b3e54e931b4-JavaScript-IU-241.18034.62" />
+        <option value="bundled-jdk-30f59d01ecdd-a203e0a19954-intellij.indexing.shared.core-IU-262.10968.63" />
+        <option value="bundled-js-predefined-d6986cc7102b-4abd2a77f808-JavaScript-IU-262.10968.63" />
       </set>
     </attachedChunks>
   </component>
@@ -411,5 +432,9 @@
     <MESSAGE value="update completo" />
     <MESSAGE value="commit quasi finito" />
     <option name="LAST_COMMIT_MESSAGE" value="commit quasi finito" />
+  </component>
+  <component name="XSLT-Support.FileAssociations.UIState">
+    <expand />
+    <select />
   </component>
 </project>

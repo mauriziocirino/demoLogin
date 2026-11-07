@@ -1,4 +1,4 @@
-use crochetique;
+use Crochetique;
 
 -- Popolamento della tabella Tessuto
 INSERT INTO Tessuto (materiale, coloreHEX) VALUES
@@ -65,7 +65,7 @@ INSERT INTO articoloOrdine (idArticolo, idOrdine, quantity) VALUES
 (3, 3, 1),		-- ordine un solo articolo
 (1, 2, 1),
 (1, 3, 2);
-SELECT * FROM ARTICOLO;
+SELECT * FROM Articolo;
 -- update totPrezzo in ArticoloOrdine
 SET SQL_SAFE_UPDATES = 0;
 update articoloOrdine aOrdi JOIN Articolo a on a.id=aOrdi.idArticolo
