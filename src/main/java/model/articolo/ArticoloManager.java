@@ -14,7 +14,7 @@ import java.util.Optional;
 
 public class ArticoloManager extends Manager implements ArticoloDao {
 
-    public ArticoloManager(DataSource source) {
+    public ArticoloManager(DataSource source) throws SQLException {
         super(source);
     }
 
@@ -66,7 +66,6 @@ public class ArticoloManager extends Manager implements ArticoloDao {
                 ps.setInt(6, articolo.getNumAcquisti());
                 ps.setString(7, articolo.getFoto());
                 ps.setInt(8, articolo.getIdCatalogo());
-                ps.setInt(9, articolo.getSconto());
                 int rows = ps.executeUpdate();
                 return rows == 1;
             }

@@ -7,10 +7,10 @@
 <body>
 <h1>Mapping Prova</h1>
 <ol>
-    <li><a href="./createCatalogo.jsp"></a>Creazione Catalogo</li>
-    <li><a href="./visualizzaCataloghi"></a>Visualizzazione Cataloghi</li>
-    <li><a href="./upgradeCataloghi">Update Catalogo id</a></li>
-    <li><a href="./catalogo?query=delete">Delete Catalogo</a></li>
+    <li><a href="./createCatalogo.jsp">Creazione Catalogo</a></li>
+    <li><a href="./catalogo?query=select">Visualizzazione Cataloghi</a></li>
+    <li><a href="./modify.jsp">Update Catalogo id</a></li>
+    <li><a href="./modify.jsp">Delete Catalogo</a></li>
 </ol>
 </body>
 </html>

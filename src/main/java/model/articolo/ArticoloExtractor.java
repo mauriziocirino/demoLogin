@@ -12,7 +12,6 @@ public class ArticoloExtractor implements ResultSetExtractor<Articolo> {
     public Articolo extractData(ResultSet resultSet) throws SQLException {
         Articolo articolo = new Articolo();
         articolo.setId(resultSet.getInt("id"));
-        articolo.setSconto(resultSet.getInt("sconto"));
         articolo.setPrice(resultSet.getInt("price"));
         articolo.setIdCatalogo(resultSet.getInt("idCatalogo"));
         articolo.setFoto(resultSet.getString("foto"));

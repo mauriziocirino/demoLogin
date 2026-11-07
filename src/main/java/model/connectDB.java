@@ -28,6 +28,10 @@ public class connectDB {
         dataSource.setPoolProperties(poolProperties);
     }
 
+    public static DataSource getDataSource() {
+        return dataSource;
+    }
+
     public static Connection getConnection() throws SQLException {
         return dataSource.getConnection();
     }

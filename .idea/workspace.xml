@@ -9,28 +9,26 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="15c74c7b-8f05-4c15-b1c7-12b9db44363c" name="Changes" comment="update completo">
-      <change afterPath="$PROJECT_DIR$/src/main/java/model/articolo/Articolo.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/model/articolo/ArticoloDao.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/model/articolo/ArticoloExtractor.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/model/articolo/ArticoloManager.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/model/articolo/accessorio/Accessorio.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/model/articolo/borsa/Borsa.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/model/catalogo/Catalogo.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/model/catalogo/CatalogoDao.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/model/catalogo/CatalogoExtractor.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/model/catalogo/CatalogoManager.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/model/catalogo/CatalogoServlet.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/model/storage/Manager.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/model/storage/ResultSetExtractor.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/webapp/createCatalogo.jsp" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/webapp/crud.jsp" afterDir="false" />
+    <list default="true" id="15c74c7b-8f05-4c15-b1c7-12b9db44363c" name="Changes" comment="commit quasi finito">
+      <change afterPath="$PROJECT_DIR$/src/main/webapp/modify.jsp" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/webapp/selectCataloghi.jsp" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/dataSources.local.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/dataSources.local.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/dataSources.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/dataSources.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/model/UserDAO.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/model/UserDAO.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/model/articolo/Articolo.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/model/articolo/Articolo.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/model/articolo/ArticoloExtractor.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/model/articolo/ArticoloExtractor.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/model/articolo/ArticoloManager.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/model/articolo/ArticoloManager.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/model/articolo/accessorio/Accessorio.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/model/articolo/accessorio/Accessorio.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/model/articolo/borsa/Borsa.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/model/articolo/borsa/Borsa.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/model/catalogo/CatalogoDao.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/model/catalogo/CatalogoDao.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/model/catalogo/CatalogoManager.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/model/catalogo/CatalogoManager.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/model/catalogo/CatalogoServlet.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/model/catalogo/CatalogoServlet.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/model/connectDB.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/model/connectDB.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/webapp/login.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/login.jsp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/model/storage/Manager.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/model/storage/Manager.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/webapp/createCatalogo.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/createCatalogo.jsp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/webapp/crud.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/crud.jsp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/webapp/index.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/index.jsp" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -86,34 +84,35 @@
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
-  <component name="PropertiesComponent"><![CDATA[{
-  "keyToString": {
-    "ASKED_SHARE_PROJECT_CONFIGURATION_FILES": "true",
-    "Application.connectDB.executor": "Debug",
-    "RunOnceActivity.ShowReadmeOnStart": "true",
-    "SHARE_PROJECT_CONFIGURATION_FILES": "true",
-    "Tomcat Server.Tomcat 11.0.0.executor": "Run",
-    "git-widget-placeholder": "master",
-    "ignore.virus.scanning.warn.message": "true",
-    "jdk.selected.JAVA_MODULE": "openjdk-22",
-    "kotlin-language-version-configured": "true",
-    "last_opened_file_path": "C:/Users/mauri/IdeaProjects/primaProva/demoLogin/src/main/java/model",
-    "node.js.detected.package.eslint": "true",
-    "node.js.detected.package.tslint": "true",
-    "node.js.selected.package.eslint": "(autodetect)",
-    "node.js.selected.package.tslint": "(autodetect)",
-    "nodejs_package_manager_path": "npm",
-    "project.structure.last.edited": "Modules",
-    "project.structure.proportion": "0.15",
-    "project.structure.side.proportion": "0.2",
-    "vue.rearranger.settings.migration": "true"
+  <component name="PropertiesComponent">{
+  &quot;keyToString&quot;: {
+    &quot;ASKED_SHARE_PROJECT_CONFIGURATION_FILES&quot;: &quot;true&quot;,
+    &quot;Application.connectDB.executor&quot;: &quot;Debug&quot;,
+    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
+    &quot;SHARE_PROJECT_CONFIGURATION_FILES&quot;: &quot;true&quot;,
+    &quot;Tomcat Server.Tomcat 11.0.0.executor&quot;: &quot;Run&quot;,
+    &quot;git-widget-placeholder&quot;: &quot;master&quot;,
+    &quot;ignore.virus.scanning.warn.message&quot;: &quot;true&quot;,
+    &quot;jdk.selected.JAVA_MODULE&quot;: &quot;openjdk-22&quot;,
+    &quot;kotlin-language-version-configured&quot;: &quot;true&quot;,
+    &quot;last_opened_file_path&quot;: &quot;C:/Users/mauri/Documents/GitHub/demoLogin&quot;,
+    &quot;node.js.detected.package.eslint&quot;: &quot;true&quot;,
+    &quot;node.js.detected.package.tslint&quot;: &quot;true&quot;,
+    &quot;node.js.selected.package.eslint&quot;: &quot;(autodetect)&quot;,
+    &quot;node.js.selected.package.tslint&quot;: &quot;(autodetect)&quot;,
+    &quot;nodejs_package_manager_path&quot;: &quot;npm&quot;,
+    &quot;project.structure.last.edited&quot;: &quot;Modules&quot;,
+    &quot;project.structure.proportion&quot;: &quot;0.15&quot;,
+    &quot;project.structure.side.proportion&quot;: &quot;0.2&quot;,
+    &quot;settings.editor.selected.configurable&quot;: &quot;reference.settings.project.maven.repository.indices&quot;,
+    &quot;vue.rearranger.settings.migration&quot;: &quot;true&quot;
   },
-  "keyToStringList": {
-    "DatabaseDriversLRU": [
-      "mysql"
+  &quot;keyToStringList&quot;: {
+    &quot;DatabaseDriversLRU&quot;: [
+      &quot;mysql&quot;
     ]
   }
-}]]></component>
+}</component>
   <component name="RecentsManager">
     <key name="CopyFile.RECENT_KEYS">
       <recent name="C:\Users\mauri\IdeaProjects\primaProva\demoLogin\src\main\java\model" />
@@ -267,7 +266,10 @@
       <workItem from="1740962719953" duration="2865000" />
       <workItem from="1741056997757" duration="1238000" />
       <workItem from="1743477011825" duration="97000" />
-      <workItem from="1743677811943" duration="7531000" />
+      <workItem from="1743677811943" duration="14306000" />
+      <workItem from="1743696920170" duration="3961000" />
+      <workItem from="1793986476244" duration="208000" />
+      <workItem from="1793986873042" duration="2546000" />
     </task>
     <task id="LOCAL-00001" summary="commit update">
       <option name="closed" value="true" />
@@ -333,7 +335,15 @@
       <option name="project" value="LOCAL" />
       <updated>1734460577789</updated>
     </task>
-    <option name="localTasksCounter" value="9" />
+    <task id="LOCAL-00009" summary="commit quasi finito">
+      <option name="closed" value="true" />
+      <created>1743690142893</created>
+      <option name="number" value="00009" />
+      <option name="presentableId" value="LOCAL-00009" />
+      <option name="project" value="LOCAL" />
+      <updated>1743690142893</updated>
+    </task>
+    <option name="localTasksCounter" value="10" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -399,6 +409,7 @@
     <MESSAGE value="commit final" />
     <MESSAGE value="update finale" />
     <MESSAGE value="update completo" />
-    <option name="LAST_COMMIT_MESSAGE" value="update completo" />
+    <MESSAGE value="commit quasi finito" />
+    <option name="LAST_COMMIT_MESSAGE" value="commit quasi finito" />
   </component>
 </project>

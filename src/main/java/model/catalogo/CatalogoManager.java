@@ -15,12 +15,12 @@ import java.util.Optional;
 
 public class CatalogoManager extends Manager implements CatalogoDao<SQLException> {
 
-    public CatalogoManager(DataSource source) {
+    public CatalogoManager(DataSource source) throws SQLException {
         super(source);
     }
 
     @Override
-    public List<Catalogo> fetchCategories() throws SQLException {
+    public List<Catalogo> fetchCataloghi() throws SQLException {
         try(Connection con = source.getConnection()){
             try(PreparedStatement ps = con.prepareStatement("SELECT * FROM catalogo")){
                 ResultSet rs = ps.executeQuery();

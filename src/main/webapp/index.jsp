@@ -24,7 +24,7 @@
 <%
     if (user == null) {
 %>
-<a href="<%=request.getContextPath()%>/login.jsp">GO to login</a>
+<a href="<%=request.getContextPath()%>/login.jsp">GO to crud</a>
 <%
 } else {
 %>

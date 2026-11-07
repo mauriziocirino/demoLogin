@@ -5,7 +5,7 @@ import java.sql.*;
 public class UserDAO {
 public int doCheckUser(User usr) {
         try (Connection con = connectDB.getConnection()) {
-            PreparedStatement statement = con.prepareStatement("select * from users where username=? and password=?");
+            PreparedStatement statement = con.prepareStatement("select * from Utente where username=? and pass=?");
             statement.setString(1, usr.getUser());
             statement.setString(2, usr.getPass());
 
@@ -21,7 +21,7 @@ public int doCheckUser(User usr) {
     public void doSave(User u){
         try (Connection con = connectDB.getConnection()) {
             PreparedStatement ps =
-                    con.prepareStatement("INSERT INTO user (`username`, `password`) VALUES (?, ?)",
+                    con.prepareStatement("INSERT INTO Utente (`username`, `pass`) VALUES (?, ?)",
                             Statement.RETURN_GENERATED_KEYS);
 
             ps.setString(1, u.getUser());
